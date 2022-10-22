@@ -80,6 +80,7 @@ public class LoginController {
 			
 			Alert a;
 			a = new Alert(AlertType.CONFIRMATION);
+			a.setTitle("Login");
 			
 			switch(tipo) {
 				case EXITO:
@@ -99,32 +100,18 @@ public class LoginController {
 					a.setContentText("La longitud del usuario no es válida.");
 					view.getPasswordText().setText(null);
 				break;
-			}
-			
-			if(tipo.equals(Tipo.EXITO)) {
-				a.setHeaderText("¡Has accedido!");
-				a.setContentText("El usuario y la contraseña coinciden.");
-				LoginApp.primaryStage.close();
-			} else if(tipo.equals(Tipo.ERROR_LOGIN)) {
-				a = new Alert(AlertType.ERROR);
-				a.setHeaderText("¡ERROR!");
-				a.setContentText("Los credenciales introducidos no son válidos.");
-				view.getPasswordText().setText(null);
-			} else if(tipo.equals(Tipo.ERROR_USUARIO_LENGTH)) {
-				a = new Alert(AlertType.ERROR);
-				a.setHeaderText("¡ERROR!");
-				a.setContentText("La longitud del usuario no es válida.");
-				view.getPasswordText().setText(null);
-			} else if(tipo.equals(Tipo.ERROR_CONTRASEÑA_LENGTH)) {
-				a = new Alert(AlertType.ERROR);
-				a.setHeaderText("¡ERROR!");
-				a.setContentText("La longitud de la contraseña no es válida.");
-				view.getPasswordText().setText(null);
-			} else if(tipo.equals(Tipo.ERROR_NULL)) {
-				a = new Alert(AlertType.ERROR);
-				a.setHeaderText("¡ERROR!");
-				a.setContentText("Algun parámetro recibido es nulo.");
-				view.getPasswordText().setText(null);
+				case ERROR_CONTRASEÑA_LENGTH:
+					a = new Alert(AlertType.ERROR);
+					a.setHeaderText("¡ERROR!");
+					a.setContentText("La longitud de la contraseña no es válida.");
+					view.getPasswordText().setText(null);
+				break;
+				case ERROR_NULL:
+					a = new Alert(AlertType.ERROR);
+					a.setHeaderText("¡ERROR!");
+					a.setContentText("Algun parámetro recibido es nulo.");
+					view.getPasswordText().setText(null);
+				break;
 			}
 			a.show();
 		}

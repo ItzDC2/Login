@@ -81,6 +81,26 @@ public class LoginController {
 			Alert a;
 			a = new Alert(AlertType.CONFIRMATION);
 			
+			switch(tipo) {
+				case EXITO:
+					a.setHeaderText("¡Has accedido!");
+					a.setContentText("El usuario y la contraseña coinciden.");
+					LoginApp.primaryStage.close();
+				break;
+				case ERROR_LOGIN:
+					a = new Alert(AlertType.ERROR);
+					a.setHeaderText("¡ERROR!");
+					a.setContentText("Los credenciales introducidos no son válidos.");
+					view.getPasswordText().setText(null);
+				break;
+				case ERROR_USUARIO_LENGTH:
+					a = new Alert(AlertType.ERROR);
+					a.setHeaderText("¡ERROR!");
+					a.setContentText("La longitud del usuario no es válida.");
+					view.getPasswordText().setText(null);
+				break;
+			}
+			
 			if(tipo.equals(Tipo.EXITO)) {
 				a.setHeaderText("¡Has accedido!");
 				a.setContentText("El usuario y la contraseña coinciden.");

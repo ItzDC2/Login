@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>dad</groupId>
@@ -12,6 +13,8 @@
 		<exec.mainClass>dad.Main</exec.mainClass>
   </properties>
 =======
+=======
+>>>>>>> 80374a8ff2db764c9c9268f5330a79d1af4ad2ff
 =======
 >>>>>>> 80374a8ff2db764c9c9268f5330a79d1af4ad2ff
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -29,6 +32,9 @@
 	</properties>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 80374a8ff2db764c9c9268f5330a79d1af4ad2ff
+=======
 >>>>>>> 80374a8ff2db764c9c9268f5330a79d1af4ad2ff
 =======
 >>>>>>> 80374a8ff2db764c9c9268f5330a79d1af4ad2ff
@@ -61,6 +67,10 @@
 	</dependencies>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 80374a8ff2db764c9c9268f5330a79d1af4ad2ff
 =======
 
 >>>>>>> 80374a8ff2db764c9c9268f5330a79d1af4ad2ff
